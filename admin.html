@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CBT App - Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Panel</h1>
+
+    <h3>Add Question</h3>
+    <input id="qText" placeholder="Enter Question"><br><br>
+    <input id="optA" placeholder="Option A"><br>
+    <input id="optB" placeholder="Option B"><br>
+    <input id="optC" placeholder="Option C"><br>
+    <input id="optD" placeholder="Option D"><br><br>
+    <label>Correct:</label>
+    <select id="correct">
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+      <option value="D">D</option>
+    </select><br><br>
+    <button id="addQ">Add Question</button>
+
+    <h3>Bulk Upload (CSV)</h3>
+    <input type="file" id="csvFile" accept=".csv">
+    <button id="uploadCSV">Upload CSV</button>
+
+    <h3>Question Bank</h3>
+    <ul id="questionList"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CBT App - Student</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Portal</h1>
+    <div id="loginArea">
+      <input id="studentName" placeholder="Enter your name" />
+      <button id="startExamBtn">Start Exam</button>
+    </div>
+
+    <div id="examArea" style="display:none;">
+      <h2>Subject: Civil Engineering</h2>
+      <div id="timer">Time Left: <span id="time">05:00</span></div>
+      <div id="questionBox"></div>
+      <button id="nextBtn">Next</button>
+      <button id="submitBtn" style="display:none;">Submit Exam</button>
+    </div>
+
+    <div id="resultArea" style="display:none;">
+      <h2>Exam Completed!</h2>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
